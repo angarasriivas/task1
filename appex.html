@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+body{
+    padding: 0px;
+    margin: 0px;
+}
+        /* Header Styling */
+        header {
+            background-color: #ffffff;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            animation: slideIn 1s ease-out;
+        }
+
+        /* Navigation Styling */
+        nav {
+            background-color: #34495e;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 1.5rem;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #3498db;
+        }
+        #hh1{
+                color: black;
+            }
+
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .content {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 1rem 0;
+            transition: transform 0.3s ease;
+        }
+
+        .content img:hover {
+            transform: scale(1.05);
+        }
+        #pp1{
+    position: relative;
+    top: 50px;
+}
+
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        button{
+            width: 100px;
+            height: 40px;
+            background-color: #3498db;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        /* Animations */
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            nav a {
+                margin: 0 0.5rem;
+                font-size: 0.9rem;
+            }
+           
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function Myclick(){
+         alert("Hello! You clicked the button.")
+        }
+    </script>
+    <header>
+        <div> <img src="C:\Users\angara srinivas\Downloads\apex.png" alt="Sample Image 1" width="100px" height="40px"></div>
+        <h1 id="hh1">Welcome to My Sample Webpage</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <div class="content">
+            <h2>About Us</h2>
+            <p>
+                Welcome to ApexPlanet Software Pvt. Ltd. where digital innovation meets strategic marketing excellence. We are a passionate team of digital marketing professionals dedicated to helping businesses of all sizes thrive in the online world. Our mission is to empower brands with the tools and strategies they need to succeed in today’s ever-evolving digital landscape.
+            </p>
+            <img src="C:\Users\angara srinivas\Downloads\apex.png" alt="Sample Image 1">
+            <p>
+                Learn more about our work by visiting our <a href="https://apexplanet.in" target="_blank">official website</a>.
+            </p>
+        </div>
+
+        <div class="content">
+            <h2>Our Gallery</h2>
+            <p>
+                Check out some of our amazing photos below. Hover over the images to see a zoom effect!
+            </p>
+            <img src="C:\Users\angara srinivas\Downloads\apex.png" alt="Sample Image 2">
+            <p id="pp1">
+                Follow us on <a href="https://www.linkedin.com/posts/apexplanet-software-pvt-ltd_apexplanet-software-pvt-ltd-a-javascript-activity-7250855259021991936-EsSx?utm_source=share&utm_medium=member_desktop&rcm=ACoAADtGNpQBrJ2NuFm7RgmAPXwwRC7mCRYIsro" target="_blank">social media</a> for more updates.
+            </p>
+            
+        </div>
+        <button  onclick="Myclick()" >Click Here</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 My Webpage. All rights reserved.</p>
+    </footer>
+</body>
+</html>
